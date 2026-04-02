@@ -60,6 +60,7 @@ public class Main {
 		int testId = sc.nextInt();
 		sellerDao.deleteById(testId);
 		System.out.println("Deletion completed!");
+		
+		sc.close();
 	}
-
 }
