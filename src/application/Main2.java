@@ -21,14 +21,17 @@ public class Main2 {
 		
 		System.out.println(department);
 		
-		System.out.println("\n===== TEST 2: Department findAll=====");
+		System.out.println("\n===== TEST 2: Department findAll =====");
 		list = departmentDao.findAll();
 		
 		for(Department obj : list) {
 			System.out.println(obj);
 		}
 		
-		
+		System.out.println("\n===== TEST 3: Department Insert =====");
+		Department newDepartment = new Department(null, "Music");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = " + newDepartment.getId());
 		
 		
 	sc.close();
